@@ -33,15 +33,24 @@ if op == "lpf":
   while i <= num2:
     num.append(i)
     i += 1
-  print(num)
+  print(primefaclist)
   while num:
     randomnumber = random.choice(num)
     rnstr = str(randomnumber)
     print("What's the prime factorization of", rnstr, "?" )
     answer = input()
-    if answer == "Yes":
+    answer = answer.split(" ")
+    primefac_answer = {}
+    for x in answer:
+      if len(x) == 1:
+        primefac_answer[int(x)] = 1
+      else:
+        x = x.split("^")
+        primefac_answer[int(x[0])] = int(x[1])
+    if primefac_answer == primefaclist[randomnumber-2]:
+      print("Correct!")
       num.remove(randomnumber)
+    else:
+      print("That's Wrong!")
   
   print("Congratulation, you're done!")
-
-    
