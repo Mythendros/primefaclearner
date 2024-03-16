@@ -1,5 +1,4 @@
 import random
-from sympy import factorint
 
 primefaclist = []
 def generate_prime_factors(num2):
