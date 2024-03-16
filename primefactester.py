@@ -1,6 +1,23 @@
 import random
 from sympy import factorint
 
+primefaclist = []
+def generate_prime_factors(num2):
+    global primefaclist
+    n = num2 - 1
+    primefaclist = [{} for _ in range(n)]
+
+    for i in range(len(primefaclist)):
+      if not primefaclist[i]:
+        primefaclist[i][i+2] = 1
+        pzanzahl = 1
+        while (i+2)**pzanzahl <= num2:
+          vielfache = 1
+          while ((i+2) ** pzanzahl)*vielfache <= num2:
+            primefaclist[((i+2) ** pzanzahl)*vielfache-2][i+2] = pzanzahl
+            vielfache += 1
+          pzanzahl += 1
+
 user_input = input("Enter your command... (cmd [arg1] [arg2])")
 user_input = user_input.lower()
 user_input = user_input.split(" ")
@@ -8,9 +25,10 @@ op, num1, num2 = user_input
 num1 = int(num1)
 num2 = int(num2)
 
-#print(num1)
+
 if op == "lpf":
-  #print(num1, num2)
+  print("Genrating Primefactorisations..")
+  generate_prime_factors(num2)
   num = []
   i = num1
   while i <= num2:
