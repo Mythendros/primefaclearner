@@ -37,7 +37,7 @@ num2 = int(num2)
 
 # If command is to generate prime factorizations
 if op == "lpf":
-    print("Generating Prime Factorisations..")
+    print("Generating Prime Factorizations..")
     # Generate prime factorizations up to num2
     generate_prime_factors(num2)
     num = []
