@@ -27,6 +27,21 @@ def generate_prime_factors(num2):
                     vielfache += 1
                 pzanzahl += 1
 
+#function to get the prime-factorisation of an integer as a human-readable string
+def primefacstring(num):
+  #get the primefactorisation as a dictionary
+  dict = primefaclist[num-2]
+  #create variable that gets returned
+  output = ""
+  #loop trough the different prime factors from the dictionary and add them to the string
+  for pz in dict.keys():
+    #check special case, if a prime factor is only once in the primefac
+    if dict[pz] == 1:
+      output = output + " " + str(pz)
+    else:
+      output = output + " " + str(pz) + "^" + str(dict[pz])
+  return output
+    
 # Prompt user for input command
 user_input = input("Enter your command... (cmd [arg1] [arg2])")
 user_input = user_input.lower()
