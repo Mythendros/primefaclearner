@@ -59,7 +59,7 @@ if op == "quizme":
         print("num1 must be smaller than num2. Execute program again to retry.")
         exit()
     if num1 < 2:
-        print("num1 must be greater than 1")
+        print("num1 must be greater than 1. Primfactorization will start from 2 and will go up to " + str(num2) + ".")
         numstate = 1
     if num2 < 2:
         print("num2 must be greater than 1. Execute program again to retry.")
@@ -96,7 +96,9 @@ if op == "quizme":
         if primefac_answer == primefaclist[randomnumber-2]:
             print("Correct!")
             num.remove(randomnumber)
+            print(str(len(num)) + " numbers left to test.")
         else:
-            print("That's Wrong! The prime factorisation is '" + primefacstring(randomnumber) + "'")
+            print("That's Wrong! The prime factorisation is '" + primefacstring(randomnumber) + "'.")
+            print(str(len(num)) + " numbers left to test.")
   
     print("Congratulations, you're done!")
