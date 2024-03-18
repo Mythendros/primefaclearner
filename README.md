@@ -1,13 +1,13 @@
 # primefaclearner
-Primefaclearner is a Python script designed to efficiently generate prime factorizations for numbers within a specified range. The user is prompted to guess the prime factorization of a randomly selected number within the given range.
+Primefaclearner is a Python script designed to help you memorize prime-factorisations, it efficiently generates prime factorizations for numbers within a specified range. The user is prompted to guess the prime factorization of a randomly selected number within the given range.
 
 ## Input
 **1st Input: cmd [arg1] [arg2]**
 
 cmd is the command to excecute:
-It must be a string representing a valid command (`lpf` in this case).
+It must be a string representing a valid command (`quizme` in this case).
 
-1. lpf: This command indicates that the program should generate prime factorizations.
+1. quizme: This command indicates that the program should generate prime factorizations.
   
 [arg1]: This is the first argument, which is expected to be an integer representing a lower bound.
 
@@ -16,7 +16,7 @@ It must be a string representing a valid command (`lpf` in this case).
 For example, a valid command would be:
 
 ```
-lpf 37 56
+quizme 37 56
 ```
 This would let the program generate all prim factorizations between 37 and 56.
 
