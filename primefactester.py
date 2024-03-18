@@ -72,7 +72,7 @@ if op == "quizme":
         primefac_answer = {}
         # Process user's input for prime factorization
         for x in answer:
-            if len(x) == 1:
+            if "^" not in x:
                 primefac_answer[int(x)] = 1
             else:
                 x = x.split("^")
