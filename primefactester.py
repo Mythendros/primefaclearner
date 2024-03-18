@@ -82,6 +82,6 @@ if op == "quizme":
             print("Correct!")
             num.remove(randomnumber)
         else:
-            print("That's Wrong!")
+            print("That's Wrong! The prime factorisation is '" + primefacstring(randomnumber) + "'")
   
     print("Congratulations, you're done!")
