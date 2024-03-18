@@ -1,5 +1,5 @@
 # primefaclearner
-Primefaclearner is a Python script designed to help you memorize prime-factorisations, it efficiently generates prime factorizations for numbers within a specified range. The user is prompted to guess the prime factorization of a randomly selected number within the given range.
+Primefaclearner is a Python script designed to help you memorize prime factorizations, it efficiently generates prime factorizations for numbers within a specified range. The user is prompted to guess the prime factorization of a randomly selected number within the given range.
 
 ## Input
 **1st Input: cmd [arg1] [arg2]**
