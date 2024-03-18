@@ -76,7 +76,6 @@ if op == "quizme":
     while i <= num2:
         num.append(i)
         i += 1
-    print(primefaclist)
     # Randomly select numbers from the list and prompt user for prime factorization
     while num:
         randomnumber = random.choice(num)
