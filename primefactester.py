@@ -40,6 +40,8 @@ def primefacstring(num):
       output = output + " " + str(pz)
     else:
       output = output + " " + str(pz) + "^" + str(dict[pz])
+  #remove unecessary space at the beginning of the string
+  output = output[1:]
   return output
     
 # Prompt user for input command
