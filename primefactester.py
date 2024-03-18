@@ -51,14 +51,27 @@ user_input = user_input.split(" ")
 op, num1, num2 = user_input
 num1 = int(num1)
 num2 = int(num2)
+numstate = 0
 
 # If command is to generate prime factorizations
 if op == "quizme":
+    if num1 > num2:
+        print("num1 must be smaller than num2. Execute program again to retry.")
+        exit()
+    if num1 < 2:
+        print("num1 must be greater than 1. Primfactorization will start from 2 and will go up to " + str(num2) + ".")
+        numstate = 1
+    if num2 < 2:
+        print("num2 must be greater than 1. Execute program again to retry.")
+        exit()
     print("Generating Prime Factorizations..")
     # Generate prime factorizations up to num2
     generate_prime_factors(num2)
     num = []
-    i = num1
+    if numstate == 0:
+        i = num1
+    else:
+        i = 2
     # Create a list of numbers from num1 to num2
     while i <= num2:
         num.append(i)
@@ -83,7 +96,9 @@ if op == "quizme":
         if primefac_answer == primefaclist[randomnumber-2]:
             print("Correct!")
             num.remove(randomnumber)
+            print(str(len(num)) + " numbers left to test.")
         else:
-            print("That's Wrong! The prime factorisation is '" + primefacstring(randomnumber) + "'")
+            print("That's Wrong! The prime factorisation is '" + primefacstring(randomnumber) + "'.")
+            print(str(len(num)) + " numbers left to test.")
   
     print("Congratulations, you're done!")
