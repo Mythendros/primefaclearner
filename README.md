@@ -18,7 +18,7 @@ For example, a valid command would be:
 ```
 quizme 37 56
 ```
-This would let the program generate all prim factorizations between 37 and 56.
+This would let the program generate all prime factorizations between 37 and 56.
 
 **2nd Input: Prime factorization of the number**
 
@@ -30,4 +30,4 @@ For example, if the program asks for the prime factorization of the number 12, y
 2^2 3^1
 ```
 
-This answer indicates that the prime factorization of 12 is \(2^2 \times 3^1\), meaning that 2 is raised to the power of 2 and 3 is raised to the power of 1. 
+This answer indicates that the prime factorization of 12 is \(2^2 times 3^1\), meaning that 2 is raised to the power of 2 and 3 is raised to the power of 1. 
