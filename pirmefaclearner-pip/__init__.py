@@ -1,1 +1,1 @@
-from .primefaclearner-pip import primefaclearner
+from .primefaclearner import primefaclearner
