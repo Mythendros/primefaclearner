@@ -27,7 +27,7 @@ Make sure your answer follows this format: `prime^power`, with each prime factor
 For example, if the program asks for the prime factorization of the number 12, you would respond with the prime factors and their powers:
 
 ```
-2^2 3^1
+2^2 3
 ```
 
-This answer indicates that the prime factorization of 12 is \(2^2 times 3^1\), meaning that 2 is raised to the power of 2 and 3 is raised to the power of 1. 
+This answer indicates that the prime factorization of 12 is \(2^2 times 3\), meaning that 2 is raised to the power of 2 and 3 is raised to the power of 1. 
