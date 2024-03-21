@@ -27,24 +27,22 @@ def generate_prime_factors(num2):
                     vielfache += 1
                 pzanzahl += 1
 
-#function to get the prime-factorisation of an integer as a human-readable string
+# function to get the prime-factorisation of an integer as a human-readable string
 def primefacstring(num):
-  #get the primefactorisation as a dictionary
-  dict = primefaclist[num-2]
-  #create variable that gets returned
-  output = ""
-  #loop trough the different prime factors from the dictionary and add them to the string
-  for pz in dict.keys():
-    #check special case, if a prime factor is only once in the primefac
-    if dict[pz] == 1:
-      output = output + " " + str(pz)
-    else:
-      output = output + " " + str(pz) + "^" + str(dict[pz])
-  #remove unecessary space at the beginning of the string
-  output = output[1:]
-  return output
-    
-
+    # get the primefactorisation as a dictionary
+    dict = primefaclist[num-2]
+    # create variable that gets returned
+    output = ""
+    # loop trough the different prime factors from the dictionary and add them to the string
+    for pz in dict.keys():
+        # check special case, if a prime factor is only once in the primefac
+        if dict[pz] == 1:
+            output = output + " " + str(pz)
+        else:
+            output = output + " " + str(pz) + "^" + str(dict[pz])
+    # remove unecessary space at the beginning of the string
+    output = output[1:]
+    return output
 
 # If command is to generate prime factorization
 def quizme(num1, num2):
@@ -58,11 +56,8 @@ def quizme(num1, num2):
         num2 = num1
     generate_prime_factors(num2)
     num = []
-    if numstate == 0:
-        i = num1
-    else:
-        i = 2
     # Create a list of numbers from num1 to num2
+    i = num1
     while i <= num2:
         num.append(i)
         i += 1
