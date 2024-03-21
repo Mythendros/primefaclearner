@@ -28,9 +28,9 @@ For example, a valid command would be:
 ```
 quizme 37 56
 ```
-This would let the program generate all prime factorizations between 37 and 56.
+This would let the program ask the prime factorization of a number between 37 and 56.
 
-*2nd Input*: Prime factorization of the number
+*Second Input*: Prime factorization of the number
 
 Make sure your answer follows this format: `prime^power`, with each prime factor and its power separated by a space, and multiple prime factors separated by a space as well.
 
@@ -46,3 +46,10 @@ This answer indicates that the prime factorization of 12 is \(2^2 times 3\), mea
 *First input*: showpf [arg1]
 
 [arg1]: This Input represents the number that is taken to generate the prime factorization.
+
+For example, a valid command would be:
+
+```
+showpf 67
+```
+This would let the program print out the prime factorization of 67.
