@@ -91,3 +91,29 @@ def quizme(num1, num2):
             print(str(len(num)) + " numbers left to test.")
   
     print("Congratulations, you're done!")
+
+def showpf(num1, num2=None):
+    num1 = int(num1)
+    if num2 is None:
+        generate_prime_factors(num1)
+        print(num1,"=",primefacstring(num1))
+    else:
+        num2 = int(num2)
+        if num1 < 2:
+            num1 = 2
+        if num2 < 2:
+            num2 = 2
+        if num1 > num2:
+            num2 = num1
+        generate_prime_factors(num2)
+        num = []
+        # Create a list of numbers from num1 to num2
+        i = num1
+        while i <= num2:
+            num.append(i)
+            i += 1
+        for x in num:
+            print(x,"=",primefacstring(x))
+
+
+# End of the script
