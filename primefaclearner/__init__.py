@@ -1,1 +1,1 @@
-from .primefaclearner import primefaclearner
+from .primefaclearner import quizme
