@@ -2,8 +2,10 @@
 Primefaclearner is a Command-Line Tool written in Python designed to help you memorize prime factorizations. It can efficiently generate prime factorizations for numbers within a specified range and quiz you about them.
 
 ## Installation
+Primefaclearner can be installed via pip!
 ```
-pip install "????"
+pip install git+https://github.com/Mythendros/primefaclearner.git
+
 ```
 
 ## Input
