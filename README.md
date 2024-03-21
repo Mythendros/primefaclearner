@@ -8,13 +8,13 @@ pip install git+https://github.com/Mythendros/primefaclearner.git
 
 ```
 
-## Input
+## Usage
 **1st Input: cmd [arg1] [arg2]**
 
-cmd is the command to excecute:
+primefaclearner has two different subcommands:
 
 1. quizme: This command quizes the user about prime factorizations in a given range
-2. showpf: This command gives the prime factorization of a given number
+2. showpf: This command gives the prime factorization of a given number or the prime factorizations of multiple numbers in a given range.
 
 *Sidenote*: It must be a string representing a valid command.
 
