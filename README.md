@@ -31,6 +31,7 @@ This would let the program print out the prime factorization of 67.
 primefaclearner showpf 3 47
 ```
 This would let the program print out the prime factorizations of the numbers from 3 up to 47.
+
 ---
 *Second Input*: Prime factorization of the number
 
