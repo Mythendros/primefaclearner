@@ -21,14 +21,14 @@ def main():
     )
 
     # Subcommand for 'showpf'
-    showpf_parser = subparsers.add_parser('showpf', help='Shows the prime factorisation of a given number or multiple numbers in a given range.')
+    showpf_parser = subparsers.add_parser('showpf', help='Shows the prime factorization of a given number or multiple numbers in a given range.')
     showpf_parser.add_argument(
         "num", type=int,
-        help="Number to factorise or lower limit of the numbers to factorise."
+        help="Number to factorize or lower limit of the numbers to factorize."
     )
     showpf_parser.add_argument(
         "num2", type=int, nargs='?', default=None,
-        help="Upper limit of the numbers to factorise. Only needed when you want tp obtain the prime factorisation of more than one number."
+        help="Upper limit of the numbers to factorise. Only needed when you want to obtain the prime factorization of more than one number."
     )
 
     argcomplete.autocomplete(parser)  # Enable tab completion
