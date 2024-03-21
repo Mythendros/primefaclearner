@@ -23,22 +23,6 @@ Examples:
 primefaclearner quizme 37 56
 ```
 This would let the program quiz you about the prime factorizations of the numbers between 37 and 56.
-
-*Sidenote*: It must be a string representing a valid command.
-
-### quizme
-*First input*: quizme [arg1] [arg2]
-
-[arg1]: This is the first argument, which is expected to be an integer representing a lower bound.
-
-[arg2]: This is the second argument, which is expected to be an integer representing an upper bound. 
-
-For example, a valid command would be:
-
-```
-primefaclearner quizme 37 56
-```
-This would let the program ask the prime factorization of a number between 37 and 56.
 ```
 primefaclearner showpf 67
 ```
@@ -47,6 +31,10 @@ This would let the program print out the prime factorization of 67.
 primefaclearner showpf 3 47
 ```
 This would let the program print out the prime factorizations of the numbers from 3 up to 47.
+
+
+
+
 
 *Second Input*: Prime factorization of the number
 
@@ -71,3 +59,27 @@ For example, a valid command would be:
 primefaclearner showpf 67
 ```
 This would let the program print out the prime factorization of 67.
+
+### quizme
+*First input*: quizme [arg1] [arg2]
+
+[arg1]: This is the first argument, which is expected to be an integer representing a lower bound.
+
+[arg2]: This is the second argument, which is expected to be an integer representing an upper bound. 
+
+For example, a valid command would be:
+
+```
+primefaclearner quizme 37 56
+```
+This would let the program ask the prime factorization of a number between 37 and 56.
+```
+primefaclearner showpf 67
+```
+This would let the program print out the prime factorization of 67.
+```
+primefaclearner showpf 3 47
+```
+This would let the program print out the prime factorizations of the numbers from 3 up to 47.
+
+*Sidenote*: It must be a string representing a valid command.
