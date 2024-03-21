@@ -15,9 +15,9 @@ primefaclearner has two different subcommands:
 2. showpf: This command gives the prime factorization of a given number or the prime factorizations of multiple numbers in a given range.
 
 The syntax is:
-'''
+```
 primefaclearner [<subcommand>] [<number1>] [<number2>]
-'''
+```
 
 *Sidenote*: It must be a string representing a valid command.
 
