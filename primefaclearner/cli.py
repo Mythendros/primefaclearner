@@ -5,12 +5,12 @@ from .primefaclearner import showpf
 
 def main():
     parser = argparse.ArgumentParser(
-        description="A Cli-Tool to help you memorize prime factorisations!"
+        description="A Cli-Tool to help you memorize prime factorizations!"
     )
     subparsers = parser.add_subparsers(title='subcommands', dest='subcommand')
 
     # Subcommand for 'quizme'
-    quizme_parser = subparsers.add_parser('quizme', help='Quizes you about the prime factorisation of numbers in a given range.')
+    quizme_parser = subparsers.add_parser('quizme', help='Quizes you about the prime factorization of numbers in a given range.')
     quizme_parser.add_argument(
         "num1", type=int,
         help="Lower limit of the numbers you'll be quized about."
