@@ -47,18 +47,15 @@ def primefacstring(num):
 
 
 # If command is to generate prime factorization
-def quizme(num1, num2)
-    if num1 > num2:
-        print("num1 must be smaller than num2. Execute program again to retry.")
-        exit()
+def quizme(num1, num2):
+    num1 = int(num1)
+    num2 = int(num2)
     if num1 < 2:
-        print("num1 must be greater than 1. Primfactorization will start from 2 and will go up to " + str(num2) + ".")
-        numstate = 1
+        num1 = 2
     if num2 < 2:
-        print("num2 must be greater than 1. Execute program again to retry.")
-        exit()
-    print("Generating Prime Factorizations..")
-    # Generate prime factorizations up to num2
+        num2 = 2
+    if num1 > num2:
+        num2 = num1
     generate_prime_factors(num2)
     num = []
     if numstate == 0:
