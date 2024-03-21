@@ -18,6 +18,11 @@ The syntax is:
 ```
 primefaclearner [<subcommand>] [<number1>] [<number2>]
 ```
+Examples:
+```
+primefaclearner quizme 37 56
+```
+This would let the program quiz you about the prime factorizations of the numbers between 37 and 56.
 
 *Sidenote*: It must be a string representing a valid command.
 
