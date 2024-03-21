@@ -31,11 +31,7 @@ This would let the program print out the prime factorization of 67.
 primefaclearner showpf 3 47
 ```
 This would let the program print out the prime factorizations of the numbers from 3 up to 47.
-
-
-
-
-
+---
 *Second Input*: Prime factorization of the number
 
 Make sure your answer follows this format: `prime^power`, with each prime factor and its power separated by a space, and multiple prime factors separated by a space as well.
@@ -47,6 +43,8 @@ For example, if the program asks for the prime factorization of the number 12, y
 ```
 
 This answer indicates that the prime factorization of 12 is \(2^2 times 3\), meaning that 2 is raised to the power of 2 and 3 is raised to the power of 1. 
+
+------
 
 ### showpf
 *First input*: showpf [arg1]
