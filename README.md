@@ -28,7 +28,7 @@ cmd is the command to excecute:
 For example, a valid command would be:
 
 ```
-quizme 37 56
+primefaclearner quizme 37 56
 ```
 This would let the program ask the prime factorization of a number between 37 and 56.
 
@@ -52,6 +52,6 @@ This answer indicates that the prime factorization of 12 is \(2^2 times 3\), mea
 For example, a valid command would be:
 
 ```
-showpf 67
+primefaclearner showpf 67
 ```
 This would let the program print out the prime factorization of 67.
