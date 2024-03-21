@@ -17,6 +17,7 @@ primefaclearner has two different subcommands:
 The syntax is:
 '''
 primefaclearner [<subcommand>] [<number1>] [<number2>]
+'''
 
 *Sidenote*: It must be a string representing a valid command.
 
