@@ -5,16 +5,18 @@ Primefaclearner is a Command-Line Tool written in Python designed to help you me
 Primefaclearner can be installed via pip!
 ```
 pip install git+https://github.com/Mythendros/primefaclearner.git
-
 ```
 
 ## Usage
-**1st Input: cmd [arg1] [arg2]**
 
 primefaclearner has two different subcommands:
 
 1. quizme: This command quizes the user about prime factorizations in a given range
 2. showpf: This command gives the prime factorization of a given number or the prime factorizations of multiple numbers in a given range.
+
+The syntax is:
+'''
+primefaclearner [<subcommand>] [<number1>] [<number2>]
 
 *Sidenote*: It must be a string representing a valid command.
 
