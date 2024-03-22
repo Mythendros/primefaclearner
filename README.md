@@ -9,6 +9,12 @@ pip install git+https://github.com/Mythendros/primefaclearner.git
 
 ## Usage
 
+The main command of primefaclearner is
+```
+primefaclearner
+```
+
+
 primefaclearner has two different subcommands:
 
 1. quizme: This command quizes the user about prime factorizations in a given range
@@ -18,7 +24,7 @@ The syntax is:
 ```
 primefaclearner [<subcommand>] [<number1>] [<number2>]
 ```
-Examples:
+*Examples*:
 ```
 primefaclearner quizme 37 56
 ```
