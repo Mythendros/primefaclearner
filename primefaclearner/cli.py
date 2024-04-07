@@ -37,8 +37,6 @@ def main():
 
     if args.subcommand == 'quizme':
         quizme(args.num1, args.num2)
-    elif args.subcommand == 'quizme-reverse':
-        quizmereverse(args.num1, args.num2)
     elif args.subcommand == 'showpf':
         if args.num2 is None:
             showpf(args.num)
