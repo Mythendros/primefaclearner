@@ -75,7 +75,7 @@ def quizme(num1, num2):
                 primefac_answer[int(x)] = 1
             else:
                 x = x.split("^")
-                if bool(x) == True:
+                if not x:
                     primefac_answer[int(x[0])] = int(x[1])
         # Check if user's answer matches the precomputed prime factorization
         if primefac_answer == primefaclist[randomnumber-2]:
