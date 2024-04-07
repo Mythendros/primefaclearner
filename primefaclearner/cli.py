@@ -43,14 +43,7 @@ def main():
         help="Upper limit of the numbers to factorize. Only needed when you want to obtain the prime factorization of more than one number."
     )
 
-    # Define completions for each subcommand
-    completions = {
-        'quizme': [],
-        'quizme-reverse': [],
-        'showpf': []
-    }
-
-    argcomplete.autocomplete(parser, always_complete_options=False, **completions)  # Enable tab completion
+    argcomplete.autocomplete(parser)  # Enable tab completion
     args = parser.parse_args()
 
     if args.subcommand == 'quizme':
@@ -69,4 +62,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
