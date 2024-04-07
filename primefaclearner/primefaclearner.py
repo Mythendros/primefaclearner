@@ -87,6 +87,39 @@ def quizme(num1, num2):
   
     print("Congratulations, you're done!")
 
+def quizmereverse(num1, num2):
+    num1 = int(num1)
+    num2 = int(num2)
+    if num1 < 2:
+        num1 = 2
+    if num2 < 2:
+        num2 = 2
+    if num1 > num2:
+        num2 = num1
+    generate_prime_factors(num2)
+    num = []
+    # Create a list of numbers from num1 to num2
+    i = num1
+    while i <= num2:
+        num.append(i)
+        i += 1
+    # Randomly select numbers from the list and prompt user for prime factorization
+    while num:
+        randomnumber = random.choice(num)
+        factorisationasstring = primefacstring(randomnumber)
+        print("Which number does",factorisationasstring, "correspondend to?")
+        answer = input()
+        answer = int(answer)
+        if answer == randomnumber:
+            print("Correct!")
+            num.remove(randomnumber)
+            print(str(len(num)) + " numbers left to test.")
+        else:
+            print("That's Wrong! The corresponding number is '" + str(randomnumber) + "'.")
+            print(str(len(num)) + " numbers left to test.")
+  
+    print("Congratulations, you're done!")
+
 def showpf(num1, num2=None):
     num1 = int(num1)
     if num2 is None:
@@ -111,4 +144,5 @@ def showpf(num1, num2=None):
             print(x,"=",primefacstring(x))
 
 
+# End of the script
 # End of the script
