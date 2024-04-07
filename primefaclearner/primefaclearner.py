@@ -80,8 +80,8 @@ def quizme(num1, num2):
                     primefac_answer[int(x[0])] = int(x[1])
         # Check if user's answer matches the precomputed prime factorization
         if primefac_answer == primefaclist[randomnumber-2]:
-            print("Correct!   ("+str(len(num)) + " numbers left to test.)")
             num.remove(randomnumber)
+            print("Correct!   ("+str(len(num)) + " numbers left to test.)")
         else:
             print("That's Wrong! The prime factorisation is '" + primefacstring(randomnumber) + "'.   ("+str(len(num)) + " numbers left to test.)")
   
@@ -111,8 +111,8 @@ def quizmereverse(num1, num2):
         answer = input()
         answer = int(answer)
         if answer == randomnumber:
-            print("Correct!   ("+str(len(num)) + " numbers left to test.)")
             num.remove(randomnumber)
+            print("Correct!   ("+str(len(num)) + " numbers left to test.)")
         else:
             print("That's Wrong! The corresponding number is '" + str(randomnumber) + "'.   ("+ str(len(num)) + " numbers left to test.)")
   
