@@ -73,7 +73,7 @@ def quizme(num1, num2):
         for x in answer:
             if "^" not in x:
                 if x.isdigit():
-                primefac_answer[int(x)] = 1
+                    primefac_answer[int(x)] = 1
             else:
                 x = x.split("^")
                 if x[0].isdigit():
