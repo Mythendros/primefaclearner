@@ -14,11 +14,22 @@ def main():
     quizme_parser = subparsers.add_parser('quizme', help='Quizes you about the prime factorization of numbers in a given range.')
     quizme_parser.add_argument(
         "num1", type=int,
-        help="Lower limit of the numbers you'll be quized about."
+        help="Lower limit of the numbers you'll be quizzed about."
     )
     quizme_parser.add_argument(
         "num2", type=int,
-        help="Upper limit of the numbers you'll be quized about."
+        help="Upper limit of the numbers you'll be quizzed about."
+    )
+
+    # Subcommand for 'quizme-reverse'
+    quizme_reverse_parser = subparsers.add_parser('quizme-reverse', help='Quizes you about the reverse prime factorization of numbers in a given range.')
+    quizme_reverse_parser.add_argument(
+        "num1", type=int,
+        help="Lower limit of the numbers you'll be quizzed about."
+    )
+    quizme_reverse_parser.add_argument(
+        "num2", type=int,
+        help="Upper limit of the numbers you'll be quizzed about."
     )
 
     # Subcommand for 'showpf'
@@ -29,7 +40,7 @@ def main():
     )
     showpf_parser.add_argument(
         "num2", type=int, nargs='?', default=None,
-        help="Upper limit of the numbers to factorise. Only needed when you want to obtain the prime factorization of more than one number."
+        help="Upper limit of the numbers to factorize. Only needed when you want to obtain the prime factorization of more than one number."
     )
 
     argcomplete.autocomplete(parser)  # Enable tab completion
@@ -37,6 +48,8 @@ def main():
 
     if args.subcommand == 'quizme':
         quizme(args.num1, args.num2)
+    elif args.subcommand == 'quizme-reverse':
+        quizmereverse(args.num1, args.num2)
     elif args.subcommand == 'showpf':
         if args.num2 is None:
             showpf(args.num)
@@ -46,9 +59,6 @@ def main():
         print("primefaclearner")
         print("Version: 0.0.1")
         print("Type 'primefaclearner -h' for help")
-       
 
 if __name__ == "__main__":
     main()
-
-
