@@ -22,7 +22,7 @@ def main():
     )
 
     # Subcommand for 'quizme-reverse'
-    quizme_reverse_parser = subparsers.add_parser('quizme-reverse', help='Quizes you about the reverse prime factorization of numbers in a given range.')
+    quizme_reverse_parser = subparsers.add_parser('quizme-reverse', help='Quizes you about the number corresponding to a prime factorization in a given range.')
     quizme_reverse_parser.add_argument(
         "num1", type=int,
         help="Lower limit of the numbers you'll be quizzed about."
