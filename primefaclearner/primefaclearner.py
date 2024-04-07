@@ -113,12 +113,10 @@ def quizmereverse(num1, num2):
         answer = input()
         answer = int(answer)
         if answer == randomnumber:
-            print("Correct!")
+            print("Correct!   ("+str(len(num)) + " numbers left to test.)")
             num.remove(randomnumber)
-            print(str(len(num)) + " numbers left to test.")
         else:
-            print("That's Wrong! The corresponding number is '" + str(randomnumber) + "'.")
-            print(str(len(num)) + " numbers left to test.")
+            print("That's Wrong! The corresponding number is '" + str(randomnumber) + "'.   ("+ str(len(num)) + " numbers left to test.)")
   
     print("Congratulations, you're done!")
 
