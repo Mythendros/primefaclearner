@@ -72,6 +72,7 @@ def quizme(num1, num2):
         # Process user's input for prime factorization
         for x in answer:
             if "^" not in x:
+                if x.isdigit():
                 primefac_answer[int(x)] = 1
             else:
                 x = x.split("^")
